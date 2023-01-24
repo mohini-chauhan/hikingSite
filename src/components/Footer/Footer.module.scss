@@ -1,0 +1,40 @@
+.Footer {
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  color: #d8d8d8a8;
+  &__footerContentWrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__copyright {
+      font-family: Chivo;
+      font-size: 12px;
+    }
+    &__socialMedia {
+      a {
+        padding: 0 30px;
+        img {
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.3);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Footer {
+    height: 88px;
+
+    &__footerContentWrapper {
+      flex-direction: column-reverse;
+      justify-content: space-around;
+    }
+  }
+}

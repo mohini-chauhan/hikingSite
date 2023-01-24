@@ -1,0 +1,31 @@
+.Banner {
+  display: flex;
+  gap: 5px;
+  &__leftSection {
+    width: 50%;
+  }
+  &__rightSection {
+    width: 50%;
+    &__topSection {
+      display: flex;
+      gap: 5px;
+    }
+    &__bottomSection {
+      margin-top: 5px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Banner {
+    display: block;
+    gap: 5px;
+    &__leftSection {
+      width: 100%;
+      &__Tile {
+        height: 320px !important;
+      }
+    }
+  }
+}

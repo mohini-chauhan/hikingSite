@@ -1,0 +1,49 @@
+.Extras {
+  width: 12%;
+  font-family: Chivo;
+  font-size: 13px;
+  color: white;
+
+  &__title {
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  ul {
+    li {
+      list-style: none;
+      line-height: 1.38;
+      padding-top: 15px;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Extras {
+    width: 100%;
+    padding: 0;
+
+    border-top: 1px solid #efefef33;
+    &:last-child {
+      border-bottom: 1px solid #efefef33;
+    }
+    &__title {
+      line-height: 43px;
+      span {
+        float: right;
+        width: 30px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 25px;
+        font-weight: 100;
+      }
+    }
+    ul {
+      padding-bottom: 10px;
+    }
+  }
+}

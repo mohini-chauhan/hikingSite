@@ -1,0 +1,31 @@
+.Slider {
+  padding: 5px 0;
+  position: relative;
+
+  &__Left {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    margin-top: -10px;
+    text-align: center;
+    img {
+      margin-top: 5px;
+    }
+  }
+  &__Right {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    margin-top: -10px;
+    text-align: center;
+    img {
+      margin-top: 5px;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.About {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: right;
+  &__main {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-right: 30px;
+    gap: 4rem;
+    justify-content: end;
+    &__verticalText {
+      text-align: right;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      font-family: Roboto;
+      font-size: 26px;
+      font-weight: bold;
+      font-stretch: condensed;
+      line-height: 1.15;
+      color: #2736dd;
+      text-transform: uppercase;
+      &:last-letter {
+        font-style: normal;
+      }
+    }
+    &__imgWrapper {
+      position: relative;
+      &__hikingLogo {
+        position: absolute;
+        top: 249px;
+        bottom: -18px;
+        right: -15px;
+      }
+    }
+  }
+  &__card1Style {
+    width: 100%;
+    height: 300px;
+  }
+  &__card2Style {
+    width: 100%;
+    height: 462px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .About {
+    padding: 20px;
+    &__main {
+      display: block;
+      width: 100%;
+      margin-right: 0;
+      &__verticalText {
+        text-align: center;
+        writing-mode: horizontal-tb;
+        transform: none;
+        padding: 10px 0;
+      }
+      &__imgWrapper {
+        &__hikingLogo {
+          left: auto;
+          position: absolute;
+          top: auto;
+          bottom: -18px;
+          right: -15px;
+        }
+      }
+    }
+    &__card1Style {
+      height: 210px;
+    }
+    aside {
+      display: none;
+    }
+  }
+}

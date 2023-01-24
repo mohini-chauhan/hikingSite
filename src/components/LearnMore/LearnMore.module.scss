@@ -1,0 +1,29 @@
+.LearnMore {
+  width: 100%;
+  height: 27px;
+  background-color: #2736dd;
+  &__learnMoreWrapper {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    &__centralizedText {
+      text-align: center;
+      width: 98%;
+      letter-spacing: 1px;
+      p {
+        font-family: Chivo;
+        font-size: 12px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+}

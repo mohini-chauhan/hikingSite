@@ -1,0 +1,19 @@
+.Benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  &__benefitDetail {
+    font-family: Chivo;
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Benefits {
+    justify-content: left;
+  }
+}

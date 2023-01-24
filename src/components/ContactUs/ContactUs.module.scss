@@ -1,0 +1,33 @@
+.ContactUs {
+  background-color: #ffffff38;
+  &__topSection {
+    display: flex;
+    justify-content: center;
+    padding: 62px 243px;
+    gap: 78px;
+  }
+  &__bottomSection {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    border-top: 1px solid #efefef;
+    padding: 70px 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ContactUs {
+    &__topSection {
+      flex-direction: column;
+      padding: 50px 29px;
+      gap: 20px;
+    }
+    &__bottomSection {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid #efefef;
+      padding: 29px;
+    }
+  }
+}

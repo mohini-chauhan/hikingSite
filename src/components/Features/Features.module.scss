@@ -1,0 +1,35 @@
+.Features {
+  width: 100%;
+  margin-top: -4px;
+  &__topSection {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+  }
+  &__bottomSection {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Features {
+    margin-top: 0;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    &__topSection {
+      width: 100%;
+      flex-direction: column;
+    }
+    &__bottomSection {
+      width: 100%;
+      flex-direction: column;
+    }
+    &__Tile {
+      width: 100% !important;
+      height: auto !important;
+      aspect-ratio: 16/7;
+    }
+  }
+}

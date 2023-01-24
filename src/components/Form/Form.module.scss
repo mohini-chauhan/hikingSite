@@ -1,0 +1,65 @@
+.Form {
+  width: 68%;
+  p {
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.15;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  form {
+    width: fit-content;
+    border-bottom: 1px solid white;
+    input {
+      height: 40px;
+      background: transparent;
+      border: none;
+      font-family: Chivo;
+      font-size: 13px;
+      line-height: 1.38;
+      color: white;
+      &[type="email"] {
+        width: 320px;
+        padding: 5px;
+      }
+      &::placeholder {
+        color: white;
+      }
+      &[type="submit"] {
+        padding: 5px;
+        text-transform: uppercase;
+        cursor: pointer;
+        letter-spacing: 2.5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Form {
+    width: 100%;
+    margin-bottom: 39px;
+    p {
+      font-size: 23px;
+      margin-bottom: 20px;
+      br {
+        display: none;
+      }
+    }
+    form {
+      width: 100%;
+      input {
+        &[type="email"] {
+          width: 70%;
+        }
+        &[type="submit"] {
+          width: 30%;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

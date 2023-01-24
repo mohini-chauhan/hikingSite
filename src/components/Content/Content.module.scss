@@ -1,0 +1,64 @@
+.Content {
+  width: 31.25rem;
+  h5 {
+    color: black;
+    font-family: Chivo;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+  }
+  h3 {
+    margin: 5px 0 15px 0px;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: condensed;
+    line-height: 1.15;
+    letter-spacing: normal;
+    color: #2736dd;
+  }
+  &__ratingSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    p {
+      font-family: Chivo;
+      font-size: 13px;
+      letter-spacing: 2.5px;
+      font-weight: bold;
+    }
+    &__firstPara {
+      color: #2736dd;
+    }
+  }
+  &__aboutDetails {
+    margin: 18px -1px 29px 5px;
+    font-family: Chivo;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    color: #8a8a8a;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Content {
+    width: 100%;
+    padding: 15px 0;
+    h5 {
+      color: #2736dd;
+      font-family: Chivo;
+      padding: 5px 0;
+    }
+    h3 {
+      color: black;
+    }
+  }
+}
